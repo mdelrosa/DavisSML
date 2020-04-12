@@ -11770,6 +11770,19 @@ ul.typeahead-list > li > a {
 .ansi-bold { font-weight: bold; }
 
     </style>
+<style type="text/css">
+    /*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+
+    </style>
 
 
 <style type="text/css">
@@ -12069,12 +12082,12 @@ $$</li>
 <li>Regress $x_j$ on $z_0,\ldots,z_{j-1}$ giving $$\hat \gamma_{j,l} = \frac{z_l^\top x_j}{z_l^\top z_l},$$ $l = 0, \ldots, j-1$ and $z_j = x_j - \sum_{k=0}^{j-1} \hat \gamma_{j,k} z_k$</li>
 </ul>
 </li>
-<li>Regress $y$ on the residual $z_p$ to give $\hat \beta_p$</li>
-</ol>
-<ul>
-<li>Only gives us $\hat \beta_p$! Not a great algorithm in its current form.</li>
+<li><p>Regress $y$ on the residual $z_p$ to give $\hat \beta_p$</p>
+</li>
+<li><p>Only gives us $\hat \beta_p$! Not a great algorithm in its current form.</p>
+</li>
 <li>Algorithm exposes the effect of correlated input $x_j$.</li>
-</ul>
+</ol>
 
 </div>
 </div>
